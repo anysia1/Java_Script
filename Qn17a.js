@@ -1,8 +1,17 @@
-function sortArrayAscending(arr){
-return arr.sort((a, b) >= a - b);
-}
-var someNumbers = [2, 5, 3, 7, 9, 1, 7, 8];
-var sortedAscending = sortArrayAscending(someNumbers);
+function customSortAndDisplay(arr) {
 
-console.log("Original Array:", someNumbers);
-console.log("Sorted Array:", sortedArray);
+    arr.sort((a, b) => a - b);
+  
+    
+    const first3 = arr.slice(0, 3);
+    const last3 = arr.slice(-3);
+  
+  
+    const modifiedArray = [...first3, ...arr, ...last3];
+    console.log("Modified Array:", modifiedArray);
+  
+    const first3FromSorted = arr.slice(0, 3);
+    console.log("First 3 numbers from sorted array:", first3FromSorted);
+  }
+  const someNumbers = [3, 8, 2, 1, 2, 2, 3, 4];
+  customSortAndDisplay(someNumbers);

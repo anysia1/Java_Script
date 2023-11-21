@@ -11,4 +11,4 @@ function displayPattern(rows, cols) {
       console.log(row);
     }
   }
-  displayPattern(5, 5);n
+  displayPattern(5, 5);
