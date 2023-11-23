@@ -1,0 +1,5 @@
+function sumOfDigits(number) {
+    return number.toString().split('').reduce((sum, digit) => sum + parseInt(digit, 10), 0);
+}
+const num = 123;
+console.log(sumOfDigits(num));
